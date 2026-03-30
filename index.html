@@ -6,6 +6,9 @@
     <title>Moreira Modu | Design de Interiores Inteligente | Lisboa & Porto</title>
     <meta name="description" content="Design de interiores focado em otimização de luz natural e custo inteligente. Projetos residenciais e comerciais em Lisboa e Porto.">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
     <!-- Open Graph / Social -->
     <meta property="og:title" content="Moreira Modu | Design de Interiores">
     <meta property="og:description" content="Transformação de espaços com máximo impacto e custo controlado.">
@@ -52,7 +55,7 @@
         /* HERO */
         header {
             height: 90vh; display: flex; align-items: center; padding: 0 5%;
-            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('https://placehold.co/1920x1080/fcfcfc/e0e0e0?text=Moreira+Modu+Vision');
+            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('Images/Salas_IMG_2115-HDR.jpg');
             background-size: cover; background-position: center;
         }
         .hero-text { max-width: 800px; }
@@ -228,7 +231,7 @@
         <div class="portfolio-grid">
             <div class="project-card" onclick="openGallery('estudio')">
                 <div class="project-img-container">
-                    <img src="https://i.ibb.co/SD8sZqvt/Salas-A6309165.jpg" alt="Estúdio">
+                    <img src="Images/Salas_A6309156.jpg" alt="Estúdio">
                 </div>
                 <div class="project-info">
                     <h3 id="p1h">Estúdio de Produção Musical</h3>
@@ -237,7 +240,7 @@
             </div>
             <div class="project-card" onclick="openGallery('beato')">
                 <div class="project-img-container">
-                    <img src="https://i.ibb.co/wZ2rKRjr/A1.jpg" alt="Beato">
+                    <img src="Images/apartamento-t3-lisboa-beato_14_1_1518650_18600290_2_1_s0HzLz++mNlm2xAflzJ04SCEtJOcJQix3e3AZDaRiWXEB8h4ZPpqcw==_.jpg" alt="Beato">
                 </div>
                 <div class="project-info">
                     <h3 id="p2h">Apartamento T3 Beato</h3>
@@ -252,27 +255,17 @@
         <div class="about-content">
             <div class="about-img">
                 <svg viewBox="0 0 500 650" xmlns="http://www.w3.org/2000/svg" style="width:100%; display:block;">
-                    <!-- Background -->
                     <rect width="500" height="650" fill="#f5e6d0"/>
-                    <!-- Large amber block -->
                     <rect x="0" y="0" width="320" height="420" fill="#c8832a" opacity="0.85"/>
-                    <!-- Cyan accent strip -->
                     <rect x="320" y="0" width="180" height="420" fill="#00a9e0" opacity="0.9"/>
-                    <!-- Coral bottom band -->
                     <rect x="0" y="420" width="500" height="230" fill="#1a1a1a"/>
-                    <!-- White geometric overlay -->
                     <rect x="60" y="60" width="200" height="280" fill="none" stroke="white" stroke-width="2" opacity="0.4"/>
-                    <!-- Diagonal line -->
                     <line x1="0" y1="420" x2="500" y2="200" stroke="white" stroke-width="1" opacity="0.15"/>
-                    <!-- Coral accent dot -->
                     <circle cx="380" cy="100" r="50" fill="#ff5f5f" opacity="0.7"/>
-                    <!-- Small white square -->
                     <rect x="340" y="300" width="80" height="80" fill="white" opacity="0.15"/>
-                    <!-- Logo text area -->
                     <text x="60" y="490" font-family="'Avenir Next Condensed', 'Avenir Next', sans-serif" font-size="28" font-weight="800" fill="white" letter-spacing="2" text-anchor="start">MOREIRA</text>
                     <text x="60" y="525" font-family="'Avenir Next Condensed', 'Avenir Next', sans-serif" font-size="28" font-weight="800" fill="#00a9e0" letter-spacing="2" text-anchor="start">MODU</text>
                     <text x="60" y="560" font-family="'Avenir Next Condensed', 'Avenir Next', sans-serif" font-size="11" fill="#888" letter-spacing="3" text-anchor="start">DESIGN DE INTERIORES</text>
-                    <!-- Bottom line -->
                     <rect x="60" y="575" width="120" height="2" fill="#c8832a"/>
                 </svg>
             </div>
@@ -303,16 +296,16 @@
                     <p><b>Local:</b> Lisboa | Porto</p>
                 </div>
             </div>
-            <form class="contact-form" action="https://formspree.io/f/maqlolvy" method="POST">
-                <input type="text" id="f-name" placeholder="Nome Completo" required>
-                <input type="email" id="f-email" placeholder="E-mail Profissional" required>
-                <select id="f-type" class="full">
+            <form class="contact-form" action="https://formspree.io/f/moreiramodu@gmail.com" method="POST">
+                <input type="text" name="name" id="f-name" placeholder="Nome Completo" required>
+                <input type="email" name="email" id="f-email" placeholder="E-mail Profissional" required>
+                <select name="type" id="f-type" class="full">
                     <option value="" disabled selected id="f-opt1">Tipo de Projeto</option>
                     <option value="residencial">Residencial</option>
                     <option value="comercial">Comercial / Escritório</option>
                     <option value="consultoria">Consultoria Rápida</option>
                 </select>
-                <textarea id="f-msg" class="full" rows="4" placeholder="Descreva o seu desafio..."></textarea>
+                <textarea name="message" id="f-msg" class="full" rows="4" placeholder="Descreva o seu desafio..."></textarea>
                 <button type="submit" id="f-btn">Enviar Pedido de Orçamento</button>
             </form>
         </div>
@@ -325,20 +318,13 @@
     <script>
         var galleries = {
             estudio: [
-                "https://i.ibb.co/RT7K07DS/Salas-IMG-2156-HDR.jpg",
-                "https://i.ibb.co/SD8sZqvt/Salas-A6309165.jpg",
-                "https://i.ibb.co/hF5Rd056/Salas-A6309159.jpg",
-                "https://i.ibb.co/xS6BpFhn/Salas-A6309146.jpg",
-                "https://i.ibb.co/TD6bhjv5/Sala-04.jpg",
-                "https://i.ibb.co/1t0vCGs4/Sala-01.jpg",
-                "https://i.ibb.co/S4Mp8Q1k/Pormenores-A6309150.jpg"
+                "Images/Salas_IMG_2115-HDR.jpg",
+                "Images/Salas_A6309156.jpg",
+                "Images/Pormenores_A6309150.jpg"
             ],
             beato: [
-                "https://i.ibb.co/wZ2rKRjr/A1.jpg",
-                "https://i.ibb.co/XxnQR7Mh/B1.jpg",
-                "https://i.ibb.co/0jSSMCPq/B3.jpg",
-                "https://i.ibb.co/99479kb5/B4.jpg",
-                "https://i.ibb.co/1JZgJS59/C2.jpg"
+                "Images/apartamento-t3-lisboa-beato_14_1_1518650_18600290_2_1_s0HzLz++mNlm2xAflzJ04SCEtJOcJQix3e3AZDaRiWXEB8h4ZPpqcw==_.jpg",
+                "Images/apartamento-t3-lisboa-beato_14_1_1518650_18600292_2_1_ad-dHUFzLqkjYMurbFd2mguo8nxV+LGHBoOSk6Hll0zEB8h4ZPpqcw==_.jpg"
             ]
         };
 
